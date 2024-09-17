@@ -1,0 +1,12 @@
+<div class="author-profile">
+    <h2>Author Profile: {{ authorId }}</h2>
+    <p>Total Tips Received: {{ totalTips | currency }}</p>
+  
+    <h3>Recent Tips</h3>
+    <ul>
+      <li *ngFor="let tip of recentTips">
+        {{ tip.tipperId }} tipped {{ tip.amount | currency }} on {{ tip.date | date:'short' }}
+      </li>
+    </ul>
+  </div>
+  

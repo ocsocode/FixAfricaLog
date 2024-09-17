@@ -1,0 +1,16 @@
+<div>
+    <h2>Add Customer</h2>
+    <form (ngSubmit)="addCustomer()">
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="customerName" name="name" required />
+  
+      <label for="country">Country Code:</label>
+      <input id="country" [(ngModel)]="countryCode" name="country" required />
+  
+      <label for="did">DID:</label>
+      <input id="did" [(ngModel)]="did" name="did" required />
+  
+      <button type="submit">Add Customer</button>
+    </form>
+  </div>
+  

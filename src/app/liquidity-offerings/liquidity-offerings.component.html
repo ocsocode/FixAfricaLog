@@ -1,0 +1,7 @@
+<div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
+  <ul *ngIf="!errorMessage">
+    <li *ngFor="let offering of offerings">{{ offering }}</li>
+  </ul>
+  

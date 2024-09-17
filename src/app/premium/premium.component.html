@@ -1,0 +1,10 @@
+<div *ngIf="!isPremium">
+    <p>Upgrade to premium to unlock additional features!</p>
+    <button (click)="upgradeToPremium()">Upgrade Now</button>
+  </div>
+  
+  <div *ngIf="isPremium">
+    <p>Welcome, Premium User! You have access to exclusive features.</p>
+    <!-- Display premium features here -->
+  </div>
+  

@@ -1,0 +1,12 @@
+<div class="transaction-form">
+  <h2>Execute Transaction</h2>
+  
+  <label for="amount">Amount:</label>
+  <input type="number" [(ngModel)]="amount" id="amount" />
+
+  <button (click)="executeTransaction()">Submit Transaction</button>
+
+  <div *ngIf="transactionResult">
+    <p>{{ transactionResult }}</p>
+  </div>
+</div>

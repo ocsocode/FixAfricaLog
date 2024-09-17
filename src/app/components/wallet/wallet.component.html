@@ -1,0 +1,14 @@
+<div class="wallet">
+    <h2>Your Balance: {{ balance | currency }}</h2>
+    <div class="wallet-actions">
+      <button (click)="sendFunds()">Send Funds</button>
+      <button (click)="receiveFunds()">Receive Funds</button>
+    </div>
+    <h3>Transaction History</h3>
+    <ul>
+      <li *ngFor="let transaction of transactions">
+        {{ transaction.date }} - {{ transaction.amount | currency }}
+      </li>
+    </ul>
+  </div>
+  
